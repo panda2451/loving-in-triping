@@ -1,0 +1,231 @@
+body#reg {
+    background: url("../img/wallpaper.jpg") no-repeat;
+    background-size: cover;
+}
+
+.register {
+    background: #ffffff;
+    width: 890px;
+    height: 340px;
+    padding: 30px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.register .rLeft {
+    border-right: 1px solid #ccc;
+}
+
+.register .rRight {
+    margin-left: 30px;
+}
+
+.register .rLeft, .register .rRight {
+    float: left;
+}
+
+.register .rLeft h3, .register .rRight h3 {
+    padding-left: 5px;
+    width: 80px;
+    border-bottom: 5px solid #75c50a;
+}
+
+.register .rLeft form {
+    margin-top: 50px;
+    width: 450px;
+    height: 250px;
+}
+
+.register .rLeft .big-box {
+    width: 410px;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.big-box .box-one {
+    position: relative;
+    padding-left: 10px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.big-box .box-one input {
+    padding-left: 20px;
+    width: 260px;
+    height: 30px;
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.big-box .box-two {
+    padding-left: 10px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.big-box .box-two i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.big-box .box-two span {
+    color: gray;
+}
+
+.big-box .box-two.hide {
+    display: none;
+}
+
+input.btn {
+    margin-left: 130px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: #79c62a;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.big-box .box-one.error {
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+/*box--输入信息正确*/
+.big-box .box-one.right i {
+    width: 20px;
+    height: 20px;
+    background: url(../img/right2.png) center center no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    margin-top: -10px;
+}
+
+/*提示信息样式--tip*/
+/*获取焦点---默认样式*/
+.big-box .box-two.default i {
+    background: url(../img/default.png) center center no-repeat;
+}
+
+.big-box .box-two.default span {
+    color: gray;
+}
+
+/*tip--错误样式*/
+.big-box .box-two.error i {
+    background: url(../img/error.png) center center no-repeat;
+}
+
+.big-box .box-two.error span {
+    color: red;
+}
+
+/*tip---密码等级*/
+/*弱*/
+.big-box .box-two.ruo i {
+    background: url(../img/ruo.png) center center no-repeat;
+}
+
+/*中*/
+.big-box .box-two.zhong i {
+    background: url(../img/zhong.png) center center no-repeat;
+}
+
+/*强*/
+.big-box .box-two.qiang i {
+    background: url(../img/qiang.png) center center no-repeat;
+}
+
+.register .rRight div.ksreg {
+    margin-top: 50px;
+    width: 390px;
+    height: 200px;
+    background: url("../img/head.png") -281px -113px no-repeat;
+}
+
+.register .rRight a {
+    margin-left: 200px;
+    font-size: 14px;
+}
+
+.box-big{
+    position: relative;
+    margin: 20px auto;
+    width: 940px;
+    background: #ffffff;
+}
+.box-big .box-little{
+    position: absolute;
+    width: 190px;
+    border:1px solid #ccc;
+    padding: 14px;
+}
+.box-big .box-little img{
+    width: 190px;
+}
+.box-big .box-little p{
+    font-size: 14px;
+    text-align: inherit;
+}
+.box-big .box-little div{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 218px;
+    height:100%;
+    background: rgba(0,0,0,0.4);
+}
+.btn1{
+    border: none;
+    width: 140px;
+    height: 40px;
+    margin-top: 30px;
+    background: url("../img/QQLogin.png") no-repeat;
+    cursor: pointer;
+}
+.btn2{
+    border: none;
+    width: 175px;
+    height: 40px;
+    margin: 30px 0 0 20px;
+    background: url("../img/weiboLogin.png") no-repeat;
+    cursor: pointer;
+}
+.btn3{
+    border: none;
+    width: 140px;
+    height: 40px;
+    margin-top: 10px;
+    background: url("../img/taobaoLogin.png") no-repeat;
+    cursor: pointer;
+}
+.btn4{
+    border: none;
+    width: 175px;
+    height: 40px;
+    margin: 10px 0 0 20px;
+    background: url("../img/tencentBlogLogin.png") no-repeat;
+    cursor: pointer;
+}
+.btn5{
+    border: none;
+    width: 140px;
+    height: 40px;
+    margin-top: 10px;
+    background: url("../img/doubanLogin.png") no-repeat;
+    cursor: pointer;
+}
+.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover,.btn5:hover{
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+}

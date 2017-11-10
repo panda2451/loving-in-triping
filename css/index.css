@@ -1,0 +1,580 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.fix::after {
+    display: block;
+    content: "clear";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+a {
+    text-decoration: none;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: #ccc;
+    margin-bottom: 10px;
+}
+
+/*最上方*/
+body {
+    background: url("../img/bg.jpg");
+}
+
+.bg-bak {
+
+    width: 100%;
+    background: #000;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.bg-bak .container .bg-bak-L, .bg-bak .container .bg-bak-R {
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+.bg-bak .container .bg-bak-L a:hover, .bg-bak .container .bg-bak-R a:hover{
+    color: lightskyblue;
+}
+
+.bg-bak .container .bg-bak-R {
+    margin-left: 460px;
+}
+.bg-bak .container .bg-bak-R .nameF{
+    width: 80px;
+    overflow: hidden;
+}
+.bg-bak .container .bg-bak-R li {
+    float: left;
+    list-style: none;
+}
+
+.bg-bak .container .bg-bak-R li.logout {
+    display: none;
+    position: relative;
+    z-index: 10;
+    background: #66A8CC;
+    width: 74px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bg-bak .container .bg-bak-L a, .bg-bak .container .bg-bak-R a {
+    margin: 0 8px;
+    color: #fff;
+}
+
+.bg-bak .container .bg-bak-R li:nth-child(3) a {
+    margin-top: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/head.png") 913px 392px;
+}
+
+.bg-bak .container .bg-bak-R li:nth-child(4) a {
+    margin-top: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/head.png") 1025px 390px;
+}
+
+.bg-bak .container .bg-bak-R img {
+    width: 30px;
+}
+
+.navbar {
+    background: url("../img/bg.jpg");
+}
+
+.navbar .logo {
+    float: left;
+    margin: 5px 20px 0 0;
+    width: 130px;
+    height: 60px;
+    background: url("../img/logo.png") -3px 2px no-repeat;
+    background-size: cover;
+}
+
+.navbar ul {
+    float: left;
+}
+
+.navbar ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.navbar ul li.nav a {
+    margin: 0 5px;
+    color: #494949;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+}
+.navbar ul li.nav a:hover{
+    color: lightskyblue;
+}
+
+.navbar ul li.baidu input[type='text'] {
+    margin: 15px 0px 0 10px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    height: 30px;
+    width: 150px;
+}
+.navbar ul li.baidu ul{
+    width: 160px;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 0px;
+    top: 46px;
+    background: url("../img/bg.jpg");
+    overflow: hidden;
+}
+.navbar ul li.baidu ul li{
+    color: black;
+}
+
+.navbar ul li.music {
+    margin: 15px 10px 0 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/ting.png");
+    background-size: cover;
+}
+
+/*-------------------------------------------轮播*/
+.swiper-container {
+    float: left;
+    width: 700px;
+    height: 360px;
+    margin: 10px 0 0 0;
+}
+
+.swiper-slide img {
+    width: 700px;
+    height: 360px;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    margin-bottom: -10px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets img {
+    margin: 10px 4px;
+}
+
+.swiper-pagination-bullet {
+    width: 60px;
+    height: 30px;
+    border-radius: 0;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    border: 2px solid orange;
+}
+
+/*--------------------------------------------推荐部分*/
+.recommend {
+    float: left;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    width: 208px;
+    height: auto;
+    background: #fff;
+}
+
+h3 {
+    margin: 0 0 5px 10px;
+    color: #444444;
+}
+
+.recommend img {
+    margin: 10px 5px;
+    width: 194px;
+}
+
+.recommend span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+.recommend p {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    color: #444;
+    line-height: 22px;
+}
+
+/*----------------------------------------------生活部分*/
+.life {
+    margin-top: 10px;
+    float: left;
+    padding: 10px;
+    width: 680px;
+    height: auto;
+    background: #ffffff;
+}
+
+.life h3 {
+    display: inline-block;
+}
+
+.life a span {
+    float: right;
+    color: #444;
+    font-size: 14px;
+}
+.life a span:hover{
+    color: lightskyblue;
+}
+.life .img-box {
+    display: inline-block;
+    box-shadow: 0 0 10px #a7a7a7;
+    overflow: hidden;
+}
+
+.life .img-box img {
+    margin: 10px 10px 0 10px;
+    width: 203px;
+    transition: all 0.5s linear;
+}
+
+.life .img-box .img-show {
+    text-align: center;
+    opacity: 0;
+    padding: 20px 10px;
+    background: lightskyblue;
+    color: #fff;
+}
+
+.life .img-box img:hover {
+    transform: scale(1.2);
+}
+
+/*-------------------------------------热门标签*/
+.hot {
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    float: left;
+    width: 208px;
+    height: auto;
+    background: #ffffff;
+}
+
+h4 {
+    display: inline-block;
+    margin: 0 0 5px 10px;
+    color: #75c50a;
+}
+
+.hot span.orange {
+    color: #ffa500;
+    font-size: 24px;
+}
+
+.hot span.green {
+    color: #75c50a;
+    font-size: 20px;
+}
+
+/*------------------------------------------视频*/
+.video {
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    float: left;
+    width: 208px;
+    height: auto;
+    background: #ffffff;
+}
+
+.video a span {
+    float: right;
+    color: #444;
+    font-size: 14px;
+}
+
+.video a span:hover {
+    color: lightskyblue;
+    font-size: 14px;
+}
+
+.video p {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    color: #444;
+    line-height: 22px;
+}
+
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
+
+.up {
+    margin-top: -30px;
+}
+
+.act a span {
+    float: right;
+    color: #444;
+    font-size: 14px;
+}
+.act a span:hover{
+    color: lightskyblue;
+}
+
+.act hr {
+    margin: 5px 0;
+}
+
+.act p {
+    text-align: center;
+}
+
+.love {
+    margin-top: 15px;
+}
+
+.arc img {
+    display: inline-block;
+    width: 100px;
+}
+
+.arc p.pbt {
+    float: right;
+    margin: 10px 20px 0 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.arc hr {
+    border: none;
+    height: 1px;
+    border-top: 1px dotted #ccc;
+    background: none;
+}
+
+.arc hr:nth-child(3) {
+    height: 1px;
+    border: none;
+    background: #ccc;
+    margin-bottom: 10px;
+}
+
+.arc p {
+    text-align: left;
+    padding-left: 10px;
+    line-height: 14px;
+}
+
+.use hr:nth-child(2) {
+    height: 1px;
+    border: none;
+    background: #ccc;
+    margin-bottom: 10px;
+}
+
+.use img {
+    margin: 0 0 5px 0;
+    width: 60px;
+}
+
+.use p {
+    float: right;
+    margin: 10px 50px 0 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.up2 {
+    margin-top: -160px;
+}
+
+.up3 {
+    margin-top: 10px;
+}
+
+.up4 {
+    margin-top: -120px;
+}
+
+.us div {
+    /*display: none;*/
+    float: left;
+    width: 100px;
+    height: 71px;
+}
+
+.us div:nth-child(3) {
+    cursor: pointer;
+    background: url("../img/sites.png") -234px 0 no-repeat;
+}
+.us div:nth-child(3):hover {
+    background: url("../img/sites.png") -12px 0 no-repeat;
+}
+
+.us div:nth-child(4) {
+    cursor: pointer;
+    background: url("../img/sites.png") -335px 0 no-repeat;
+}
+.us div:nth-child(4):hover {
+    background: url("../img/sites.png") -113px 0 no-repeat;
+}
+
+.us div:nth-child(5) {
+    cursor: pointer;
+    background: url("../img/sites.png") -234px -71px no-repeat;
+}
+.us div:nth-child(5):hover {
+    background: url("../img/sites.png") -12px -71px no-repeat;
+}
+
+.us div:nth-child(6) {
+    cursor: pointer;
+     background: url("../img/sites.png") -335px -71px no-repeat;
+ }
+.us div:nth-child(6):hover {
+    background: url("../img/sites.png") -113px -71px no-repeat;
+}
+
+.us div:nth-child(7) {
+    cursor: pointer;
+    background: url("../img/sites.png") -234px -142px no-repeat;
+}
+.us div:nth-child(7):hover {
+    background: url("../img/sites.png") -12px -142px no-repeat;
+}
+
+.us div:nth-child(8) {
+    cursor: pointer;
+    background: url("../img/sites.png") -224px -211px no-repeat;
+}
+
+.us{
+    position: relative;
+}
+.us div.weixin {
+    width: 200px;
+    height: 200px;
+    display: none;
+    border-radius: 10px;
+    background: url("../img/weixin.png");
+    background-size: cover;
+    position: absolute;
+    right: 12px;
+    bottom: 20px;
+}
+
+hr.foothr {
+    margin-top: 10px;
+}
+
+p.foot {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+a.toTop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 56px;
+    height: 56px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #999999;
+    cursor: pointer;
+}
+
+a.toTop span {
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    height: 34px;
+    background: url("../img/sjbz_survey.png") -63px 10px no-repeat;
+}
+
+a.toModel {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 56px;
+    height: 56px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #3687d9;
+    cursor: pointer;
+}
+
+a.toModel span {
+    display: block;
+    margin: 0 auto;
+    width: 26px;
+    height: 35px;
+    background: url("../img/sjbz_survey.png") 0 10px no-repeat;
+}
+.formAdd{
+    display: none;
+    width: 260px;
+    height: 205px;
+    background: lightgrey;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    overflow: hidden;
+    /* left: 1080px;
+     top:2370px;*/
+}
+.formAdd span{
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+}
+.formAdd a{
+    color: gray;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+.formSubmit input[type='submit']{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 120px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 5px;
+    background: #3687d9;
+    margin-left: 64px;
+    cursor: pointer;
+}
